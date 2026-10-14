@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060B12"/>
+      <stop offset="50%" stop-color="#0A1624"/>
+      <stop offset="100%" stop-color="#04070D"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feColorMatrix type="matrix" values="
+        0 0 0 0 0.06
+        0 0 0 0 0.72
+        0 0 0 0 0.51
+        0 0 0 0.5 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base with subtle border -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#primaryGrad)" stroke-width="4" stroke-opacity="0.35"/>
+
+  <!-- Ambient Glow Blob -->
+  <circle cx="256" cy="240" r="140" fill="#10B981" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="320" cy="280" r="100" fill="#06B6D4" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- TV Display Screen Contour -->
+  <rect x="92" y="110" width="328" height="236" rx="36" fill="#0D1520" stroke="#1E293B" stroke-width="4"/>
+  <rect x="94" y="112" width="324" height="232" rx="34" fill="url(#glassGrad)"/>
+
+  <!-- Stylized Modern Emblem: Vision V & Prism Play Triangle -->
+  <!-- Left Wing of V Crest -->
+  <path d="M 148 165 L 210 165 L 256 295 L 222 295 Z" fill="url(#accentGrad)"/>
+  
+  <!-- Right Wing of V Crest -->
+  <path d="M 364 165 L 302 165 L 256 295 L 290 295 Z" fill="url(#primaryGrad)"/>
+
+  <!-- Central Play Arrow Glowing Symbol in Prism -->
+  <polygon points="236,200 236,270 296,235" fill="#FFFFFF" filter="url(#glow)"/>
+  <polygon points="238,206 238,264 290,235" fill="url(#primaryGrad)"/>
+
+  <!-- Signal Antenna / Live Broadcast Waves -->
+  <path d="M 226 84 C 246 72 266 72 286 84" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 206 64 C 238 46 274 46 306 64" fill="none" stroke="#34D399" stroke-width="6" stroke-linecap="round" opacity="0.45"/>
+
+  <!-- TV Stand Base -->
+  <path d="M 232 348 L 280 348 L 290 376 L 222 376 Z" fill="#1E293B"/>
+  <rect x="186" y="376" width="140" height="10" rx="5" fill="url(#primaryGrad)"/>
+
+  <!-- High-Tech "VISION IPTV" Bottom Typography -->
+  <text x="256" y="432" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="7">VISION</text>
+  <text x="256" y="468" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="800" fill="#34D399" text-anchor="middle" letter-spacing="10">IPTV PLAYER</text>
+</svg>

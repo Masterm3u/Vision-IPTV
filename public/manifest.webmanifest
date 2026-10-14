@@ -1,0 +1,99 @@
+{
+  "id": "/",
+  "name": "Vision IPTV Player",
+  "short_name": "Vision IPTV",
+  "description": "Application IPTV professionnelle pour TV en direct, Guide TV (EPG) style TiviMate, Films VOD, Séries et Enregistrements programmés.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0B0F19",
+  "theme_color": "#10B981",
+  "lang": "fr",
+  "dir": "ltr",
+  "categories": [
+    "entertainment",
+    "video",
+    "multimedia",
+    "utilities"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Guide TV EPG et lecteur Vision IPTV sur grand écran et Firestick"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Vision IPTV Player sur écran mobile et tablette"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "TV en Direct",
+      "short_name": "Direct",
+      "description": "Regarder la télévision en direct",
+      "url": "/?view=live",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Guide TV (EPG)",
+      "short_name": "Guide TV",
+      "description": "Consulter la grille des programmes",
+      "url": "/?view=epg",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Enregistrements",
+      "short_name": "Enregistrements",
+      "description": "Gérer vos émissions enregistrées et programmées",
+      "url": "/?view=recordings",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Films (VOD)",
+      "short_name": "VOD",
+      "description": "Catalogue de films à la demande",
+      "url": "/?view=vod",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

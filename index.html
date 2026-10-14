@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Vision IPTV Player</title>
+    <meta name="description" content="Application IPTV professionnelle pour TV en direct, Guide TV (EPG) style TiviMate, Films VOD, Séries et Enregistrements programmés." />
+    <meta name="application-name" content="Vision IPTV Player" />
+
+    <!-- PWA & Mobile Web Capabilities -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#10B981" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Vision IPTV" />
+
+    <!-- Icons & Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vision IPTV Player" />
+    <meta property="og:description" content="Application IPTV professionnelle pour TV en direct, Guide TV (EPG) style TiviMate, Films VOD, Séries et Enregistrements programmés." />
+    <meta property="og:image" content="/pwa-512x512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vision IPTV Player" />
+    <meta name="twitter:description" content="Application IPTV professionnelle pour TV en direct, Guide TV (EPG) style TiviMate, Films VOD, Séries et Enregistrements." />
+    <meta name="twitter:image" content="/pwa-512x512.png" />
+  </head>
+  <body class="bg-[#0A0A0A] text-white selection:bg-emerald-500 selection:text-black antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

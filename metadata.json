@@ -1,0 +1,8 @@
+{
+  "name": "Vision IPTV Player",
+  "description": "A professional IPTV player with support for Live TV, VOD, Series, Smart TV remote navigation, and multilingual support for 6 strategic global markets (EN, FR, ES, DE, PT, AR).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
